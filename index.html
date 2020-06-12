@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sally Student Resume</title>
+  <link href="index.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div id="application-root"></div>
+
+<script
+  src="https://unpkg.com/react@16/umd/react.development.js">
+</script>
+<script 
+  src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+</script>
+<script
+  src="https://unpkg.com/babel-standalone@6/babel.min.js">
+</script>
+
+<script type="text/babel">
+  function App(props) {
+    console.log(props)
+    return (
+      <div>   
+        {props.children}
+      </div>   
+    );
+  }
+
+  ReactDOM.render(
+    <App>
+      <header>
+        <h1>Sally Student</h1>
+        <img src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" 
+          alt="Picture of Sally Student" height="160" width="120"/>
+      </header>  
+      <main>
+        <section>
+          <h2>Contact Information</h2> 
+          <address>
+            <p>
+              Email: <a href="mailto:sallystudent@gmail.com" target="_blank">SallyStudent@gmail.com</a>
+            </p>  
+            <p>
+              Phone: <a href="tel:+9541234567">954-123-4567</a>
+            </p>
+          </address>
+        </section>
+
+        <section>
+          <h2>Education</h2>
+          <p>
+            <b>University of Florida</b> (2008 - 2012)
+          </p>
+          <p>Bachelor of Computer Science</p>  
+        </section>
+
+        <section>
+          <h2>Employment History</h2>
+          <p><b>Google</b> (June 2016 - December 2019)</p>
+          <p>Senior Software Engineer</p>
+          <p>
+            Kitsch mollit kale chips, kinfolk etsy pabst cupidatat commodo excepteur eu aliqua ea. Nostrud franzen put a bird on it etsy excepteur. Umami wayfarers pitchfork 3 wolf moon XOXO tofu, butcher photo booth thundercats officia jianbing irony minim reprehenderit. Fixie banjo retro taiyaki.
+          </p>
+          <ul>
+            <li>Pabst la croix craft beer banh mi</li>
+            <li>Aesthetic mumblecore church-key pug, bitters marfa mustache knausgaard tousled subway tile everyday carry</li>
+            <li>La croix readymade direct trade meggings hammock shaman fam green juice portland humblebrag</li>
+          </ul>
+          <p><b>Amazon</b> (January 2013 - May 2016)</p>
+          <p>Junior Software Engineer</p>
+          <p>
+            Dolore est officia, lomo keffiyeh commodo in gentrify sint incididunt aesthetic excepteur YOLO. Proident pabst butcher health goth cliche. Yr cornhole enim man braid, godard deserunt magna banh mi bushwick fanny pack.
+          </p>
+          <ul>
+            <li>Enamel pin raclette four dollar toast poke</li>
+            <li>Cornhole cred shaman hella bicycle rights, ugh cronut trust fund unicorn tousled</li>
+            <li>Man bun waistcoat chillwave, pop-up shabby chic poutine helvetica snackwave shaman leggings messenger bag</li>
+          </ul>
+        </section>
+      </main>
+    </App>,
+    document.querySelector('#application-root')
+  );
+
+
+</script>
+
+</body>
+</html>

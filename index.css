@@ -1,0 +1,15 @@
+body {
+  font-family: sans-serif;
+}
+
+header {
+  text-align: center;
+}
+
+img {
+  border-radius: 10px;
+}
+
+h1, h2 {
+  color: darkcyan;
+}
